@@ -52,19 +52,6 @@ html {
     }
   }
 
-  .overlay {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
-    /* efecto Glassmorphismo */
-    background-color: black;
-    opacity: 0.3;
-    display: none;
-}
-
 /* NAVBAR */
 
 .cart.slide-right {
@@ -210,11 +197,11 @@ html {
 
 /* CATEGORIAS */
 
-.category {
+.product-category{
   width: 100%;
 }
 
-.category:hover {
+.product-category:hover {
   width: 130%;
   cursor: pointer;
 }

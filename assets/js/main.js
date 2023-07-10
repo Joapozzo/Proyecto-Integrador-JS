@@ -1,9 +1,12 @@
-// Productos
+// Elementos
 const productsOustandingContainer = document.querySelector(".products-container")
-const productsOfferContainer = document.querySelector("#products-container-offers");
 const splideList = document.querySelector(".splide__list")
 const btnBuy = document.querySelector(".button-buy")
 let productsBuy = ""
+
+const showMoreBtn = document.querySelector(".button-view-products")
+const categoriesList = document.querySelectorAll(".category")
+const categoriesContainer = document.querySelector(".categories")
 
 const listElements = document.querySelectorAll('.list__button--click');
 const iconMenu = document.querySelector('.menu-icon')
@@ -55,17 +58,79 @@ const createProductTemplate = (product) => {
     `
 }
 
-
-
 // Renderizar productos
-const renderProducts = (productsList, productsContainer, productsOfferList, productsOfferContainer) => {
-    productsContainer.innerHTML = productsList.map(createProductTemplate).join("");
+const renderProducts = (productsList, productsContainer) => {
+    productsOustandingContainer.innerHTML += productsList.map(createProductTemplate).join("");
 };
 
-// Renderiza los productos filtrados
-const renderProductsOustanding = () => {
-    const productsOutstanding = stockProducts.filter((product) => product.destacado === true);
-    renderProducts(productsOutstanding, productsOustandingContainer);
+const isLastIndexOf = () => {
+	return appState.currentProductsIndex === appState.productsLimit - 1;
+};
+
+const showMoreProducts = () => {
+	appState.currentProductsIndex += 1;
+	let { products, currentProductsIndex } = appState;
+	renderProducts(products[currentProductsIndex]);
+    if (isLastIndexOf()) {
+        showMoreBtn.classList.add("hidden")
+    }
+};
+
+const isInactiveFilterBtn = (element) => {
+	return (
+		element.classList.contains("category") &&
+		!element.classList.contains("c-active")
+	);
+};
+
+const changeBtnActiveState = (selectedCategory) => {
+	const categories = [...categoriesList];
+	categories.forEach((categoryBtn) => {
+		if (categoryBtn.dataset.category !== selectedCategory) {
+			categoryBtn.classList.remove("c-active");
+			return;
+		}
+		categoryBtn.classList.add("c-active");
+	});
+};
+
+const setShowMoreVisibility = () => {
+	if (!appState.activeFilter) {
+		showMoreBtn.classList.remove("hidden");
+		return;
+	}
+	showMoreBtn.classList.add("hidden");
+};
+
+//Filtrar productos
+const changeFilterState = (btn) => {
+	appState.activeFilter = btn.dataset.category;
+	changeBtnActiveState(appState.activeFilter);
+	setShowMoreVisibility();
+};
+
+const renderFilteredProducts = () => {
+	const filteredProducts = stockProducts.filter((product) => {
+		return product.categoria === appState.activeFilter;
+	});
+	renderProducts(filteredProducts);
+};
+
+const applyFilter = ({ target }) => {
+
+	if (!isInactiveFilterBtn(target)) {
+		return;
+	}
+	changeFilterState(target);
+
+	productsOustandingContainer.innerHTML = "";
+	if (appState.activeFilter) {
+		renderFilteredProducts();
+		appState.currentProductsIndex = 0;
+		return;
+	}
+
+	renderProducts(appState.products[0]);
 };
 
 
@@ -173,6 +238,8 @@ const trash = document.querySelector(".item-trash")
 const btnCartBuy = document.querySelector(".cart-btn-buy")
 const optLocal = document.querySelector("#opt-local")
 const cuotas = document.querySelector('.cart-cuotas-text')
+const viewMoreProducts = document.querySelector(".cart-view-more")
+const buyBtn = document.querySelector(".cart-btn-buy")
 
 let cart = JSON.parse(localStorage.getItem("cart")) || []
 const saveCart = () => {
@@ -326,8 +393,10 @@ const handleQuantity = (e) => {
 const disableBtn = (btn) => {
 	if (!cart.length) {
 		btn.classList.add("disabled");
+        btn.Enabled = false;
 	} else {
 		btn.classList.remove("disabled");
+        btn.setEnabled = true;
 	}
 };
 
@@ -357,9 +426,31 @@ const addProductOustanding = (e) => {
     updateCart();
 }
 
+const resetCartItem = () => {
+	cart = [];
+	updateCart();
+};
+
+const completeCartAction = (confirmMsg, successMsg) => {
+	if (!cart.length) return;
+
+	if (window.confirm(confirmMsg)) {
+		resetCartItem();
+		alert(successMsg);
+	}
+};
+
+const completeBuy = () => {
+	completeCartAction("¿Desea completar su compra?", "¡Gracias por su compra!");
+};
+
 const init = () => {
+
     //Renderizar productos
-    document.addEventListener("DOMContentLoaded", renderProductsOustanding)
+    renderProducts(appState.products[appState.currentProductsIndex]);
+	showMoreBtn.addEventListener("click", showMoreProducts);
+	categoriesContainer.addEventListener("click", applyFilter);
+
 
     // Abrir y cerrar menu,navbar,cart
     iconMenu.addEventListener("click", showMenu)
@@ -381,6 +472,8 @@ const init = () => {
     productsOustandingContainer.addEventListener("click", addProductOustanding)
     productsCart.addEventListener("click", handleQuantity);
     disableBtn(btnCartBuy);
+    viewMoreProducts.addEventListener("click", closeCart)
+    buyBtn.addEventListener("click", completeBuy);
 };
 
 init();

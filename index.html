@@ -222,8 +222,8 @@
             </div>
         </div>
         
-        <a class="cart-btn-buy disabled" href="">Comprar</a>
-        <a class="cart-view-more" href="#">ver más productos</a>
+        <a class="cart-btn-buy disabled">Comprar</a>
+        <a class="cart-view-more" href="#products">ver más productos</a>
     </div>
     
     <div class="overlay hidden"></div>
@@ -279,6 +279,15 @@
                 <h2 class="title-text">destacados</h2>
                 <span class="title-line"></span>
             </div>
+
+            <div class="categories">
+                <button class="category c-active">Todos</button>
+                <button class="category" data-category="Remeras">Remeras</button>
+                <button class="category" data-category="Gorras">Gorras</button>
+                <button class="category" data-category="Neceseres">Neceseres</button>
+                <button class="category" data-category="Bolsos">Bolsos</button>
+            </div>
+
             <div class="products-container" id="products-container-featured">
                 <!-- <div class="product" id="product-1">
                     <div class="product-img">
@@ -311,16 +320,16 @@
         </section>
 
         <!-- CATEGORIAS -->
-        <section id="categories">
-            <div class="category">
+        <section id="product-categories">
+            <div class="product-category">
                 <img src="./assets/imgs/model/IMG_0006.PNG" alt=""  class="category-img"/>
                 <span class="category-title">mochilas</span>
             </div>
-            <div class="category">
+            <div class="product-category">
                 <img src="./assets/imgs/model/IMG_0601.PNG" alt="" class="category-img" />
                 <span class="category-title">remeras</span>
             </div>
-            <div class="category">
+            <div class="product-category">
                 <img src="./assets/imgs/model/IMG_1745.JPG" alt="" class="category-img" />
                 <span class="category-title">neceser</span>
             </div>

@@ -184,7 +184,7 @@
 
     /* CATEGORY */
 
-    #categories {
+    #product-categories {
         gap: 15px;
         padding: 50px 30px;
     }
@@ -256,7 +256,16 @@
         #products {
             width: 100%;
         }
-    
+        
+        .categories {
+            gap: 10px;
+        }
+
+        .category {
+            font-size: 14px;
+            padding: 7px 12px;
+        }
+
         .products-container {
             row-gap: 20px;
             width: 100%;
@@ -288,14 +297,14 @@
     
         /* CATEGORY */
     
-        #categories {
+        #product-categories {
             flex-direction: column;
             width: 100%;
             padding: 0;
             gap: 0;
         }
     
-        .category {
+        .product-category {
             width: 100%;
         }
     

@@ -19,8 +19,6 @@ body {
     background-color: var(--white);
 }
 
-
-
 /* HEADINGS */
 
 h2 {
@@ -230,15 +228,23 @@ i.menu-icon {
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 65px;
+    left: 0;
     height: 100vh;
     width: 100%;
-    z-index: 5;
-    /* efecto Glassmorphismo */
-    background-color: black;
-    opacity: 0.3;
+    z-index: 1; /*Para que quede por encima del resto de las cosas*/
+
+    /*Efecto de Glassmorphismo*/
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
+
+.show-overlay {
+    display: block;
+  }
 
 /* CART */
 
@@ -491,7 +497,8 @@ i.menu-icon {
     justify-content: center;
     padding: 10px;
     text-transform: uppercase;
-    border: 1px solid var(--blue)
+    border: 1px solid var(--blue);
+    cursor: pointer;
 }
 
 #cart-toggle:checked ~ .cart
@@ -609,6 +616,30 @@ i.menu-icon {
     background-color: var(--red);
     height: 2px;
     width: 80px;
+}
+
+/* categories */
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category {
+    background: var(--white);
+    border: none;
+    padding: 10px 15px;
+    color: var(--bg-white);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.c-active {
+    background: var(--red);
+    color: white;
 }
 
 .products-container {
@@ -780,17 +811,17 @@ i.menu-icon {
 
 /* CATEGORIAS */
 
-#categories {
+#product-categories {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     width: 100%;
-    padding: 25px 50px;
+    padding: 40px 50px;
     background-color: var(--white);
 }
 
-.category {
+.product-category {
     width: 400px;
     height: 550px;
     position: relative;
@@ -819,7 +850,7 @@ i.menu-icon {
     font-size: 30px; 
 }
 
-.category::before {
+.product-category::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -907,6 +938,7 @@ i.menu-icon {
 
 /* LOCAL */
 #local-location {
+    padding: 40px 40;
     width: 100%;
     height: 700px;
     position: relative;
