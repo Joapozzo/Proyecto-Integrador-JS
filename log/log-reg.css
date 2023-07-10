@@ -1,0 +1,209 @@
+:root {
+    --red: #E71D36;
+    --blue: #011627;
+    --white: #FAFAFA;
+    --gray: #dddddd;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--montserrat);
+}
+
+body {
+    background-color: var(--white);
+}
+
+main {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.log-container {
+    z-index: 10;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /* background-color: #E71D36; */
+    position: absolute;
+}
+
+.img-back {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad baja (0.5 en este ejemplo) */
+    z-index: 1; /* Asegura que la capa esté encima de la imagen */
+}
+
+.right-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    /* background-color: var(--red); */
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.img-loguin {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.right-items {
+    padding: 0 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.brand-name {
+    color: var(--red);
+}
+
+.left-container {
+    padding: 0 10px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 30px;
+    position: relative;
+}
+
+.register-a {
+    color: var(--red);
+}
+
+.log-redes {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.facebook-container {
+    background-color: #3b5998;
+    padding: 5px 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.media-icon {
+    color: white;
+}
+
+.google-container {
+    background-color: #fbbc05;
+    padding: 5px 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.google-container:hover,
+.facebook-container:hover {
+    transition: all .2s ease-in-out;
+    scale: 1.1;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.logo {
+    width: 80px;
+}
+
+.loguin {
+    font-size: 25px;
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 10px;
+}
+
+.inputs__loguin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.input__login {
+    padding: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    outline: none;
+}
+
+.loguin-btn {
+    background-color: var(--red);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    
+}
+
+.loguin-btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--red);
+    color: var(--red);
+    transition: all .2s ease-in-out;
+}
+

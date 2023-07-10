@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+/* Key Frames */
+
+/* Animacion fade */
+/*Funcionamiento: pasa de opacidad 0 a opacidad 1*/
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animacion slide arriba */
+  /*Funcionamiento: Hacemos llegar al elemento animado desde abajo*/
+  @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animacion slide derecha */
+  /*Funcionamiento: Hacemos llegar al elemento animado desde la derecha*/
+  
+  @keyframes slide-right {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    /* efecto Glassmorphismo */
+    background-color: black;
+    opacity: 0.3;
+    display: none;
+}
+
+/* NAVBAR */
+
+.cart.slide-right {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: slide-right;
+}
+
+.nav {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-name: slide-left;
+}
+
+/* Hover de los elementos "a" del navbar */
+
+.navbar-list-item{
+  position: relative;
+  padding: 4px;
+}
+
+.navbar-list-link::after {
+  content: "";
+  height: 1px;
+  width: 50%;
+  background: var(--white);
+  position: absolute;
+  bottom: 25px;
+  margin-left:auto;
+  margin-right:auto;
+  left:0;
+  right:0;
+  translate: -50%, -50%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.active::after {
+  content: "";
+  height: 1px;
+  width: 50%;
+  background: var(--white);
+  position: absolute;
+  bottom: 25px;
+  margin-left:auto;
+  margin-right:auto;
+  left:0;
+  right:0;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+/* SUMAR Y RESTAR CART */
+.quantity-handler:hover {
+  background: var(--red);
+  color: var(--white);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  border: 1px solid var(--red);
+  cursor: pointer;
+}
+
+.item-trash:hover {
+  color: var(--blue);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  cursor: pointer;
+}
+
+/* ANIMACION CART */
+
+.cart-icon:hover,
+.user:hover {
+  transition: all .2s ease;
+  color: gray;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+}
+
+.cart {
+  animation: slide-right;
+  -webkit-animation: slide-right;
+}
+
+/* BUTTOM CART */
+.cart-btn-buy:hover {
+  background: transparent;
+  border: 1px solid var(--white);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  font-weight: 700;
+}
+
+/* VIEW MORE CART */
+.cart-view-more:hover {
+  color: rgb(191, 190, 190);
+}
+
+/* BUTTON */
+
+.button-buy:hover {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.button:hover {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  color: var(--white);
+  transition: all 500ms ease;
+}
+
+/* CAMBIO IMAGENES PRODUCT */
+.product:hover > .product-info > .product-buttons {
+  visibility: visible;
+}
+
+.product:hover > .product-img > .img {
+  display: none;
+}
+
+.product:hover > .product-img > .product-img-hover {
+  display: flex;
+}
+
+/* CATEGORIAS */
+
+.category {
+  width: 100%;
+}
+
+.category:hover {
+  width: 130%;
+  cursor: pointer;
+}
+
+/* CLIENTES */
+
+.client-info:hover > .client-hover {
+  display: flex;
+  animation: fade .3s ease-in, slide-up .3s ease-in-out;
+}
+
+.client-info:hover::before {
+  display: flex;
+  cursor: pointer;
+  animation: fade .3s ease-in;
+}
+
+/* REDES */
+
+.social-icons a i:hover {
+  color: var(--blue);
+  transition: all .5s ease;
+}
+
+.menu-list li a:hover  {
+  color: var(--blue);
+  transition: all .2s ease;
+  font-weight: 500;
+}

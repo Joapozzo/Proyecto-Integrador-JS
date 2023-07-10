@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/imgs/logos/icono-copa-indumentaria.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <!-- SLIDE SPLIDE JS -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">    
+    <title>Copa Oficial</title>
+</head>
+<body>
+
+    <div class="header-top">
+        <span class="navbar-top-text">20% DE DESCUENTO ABONANDO EN EFECTIVO O TRANSFERENCIA - ENVÍOS GRATIS EN CÓRDOBA CAPITAL</span>
+    </div>
+    <header id="header">
+        <!-- NAV-ESCRITORIO -->
+        <nav class="navbar bg-red">
+            <i class="fa-sharp fa-solid fa-bars menu-icon"></i>
+            <!-- LOGO -->
+            <img src="./assets/imgs/logos/logo-copa-white.png" class="navbar-img" alt="Logo Copa Oficial" />
+            <!-- MENU DESKTOP -->
+            <ul class="navbar-list">
+                <li class="navbar-list-item"><a href="#hero" class="navbar-list-link active">inicio</a></li>
+                <li class="navbar-list-item"><a href="#products" class="navbar-list-link">nuevo</a></li>
+                <li class="navbar-list-item item-products">
+                    <a href="#products" class="navbar-list-link ">productos<i class="fa-solid fa-angle-down"></i></a> 
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <ul>
+                            <li><a href="">remeras</a></li>
+                            <li><a href="">necesers</a></li>
+                            <li><a href="">mochilas</a></li>
+                            <li>
+                                
+                                <a href="">medias <i class="fas fa-solid fa-angle-right"></i></a>
+                                <div class="dropdown-menu-1 dropdown-menus">
+                                    <ul>
+                                        <li><a href="">vendaje cohesivo</a></li>
+                                        <li><a href="">pantorrilleras</a></li>
+                                        <li><a href="">antideslizantes</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">mate<i class="fas fa-solid fa-angle-right"></i></a>
+                                <div class="dropdown-menu-2 dropdown-menus ">
+                                    <ul>
+                                        <li><a href="">mochilas</a></li>
+                                        <li><a href="">materas</a></li>
+                                        <li><a href="">yerberas</a></li>
+                                        <li><a href="">mates</a></li>
+                                        <li><a href="">termos</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">billeteras</a></li>
+                            <li><a href="">gorras</a></li>
+                            <li><a href="">calzado</a></li>
+                            <li><a href="">bolsos</a></li>
+                            <li><a href="">morrales</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-list-item"><a href="#offers" class="navbar-list-link">descuentos</a></li>
+                <li class="navbar-list-item"><a href="#footer" class="navbar-list-link">contacto</a></li>
+            </ul>
+            
+            <!-- ICONO CARRITO -->
+            <div class="n-navbar-icons">
+                <a href="./log/loguin.html" class="user-container">
+                    <i class="fa-solid fa-user user"></i>
+                </a>
+                <div class="navbar-icons">
+                    <i class="fa-solid fa-bag-shopping cart-icon navbar-icon"></i>
+                    <span id="cart-count" class="bg-red">0</span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- OVERLAY -->
+    <!-- NAV-RESPONSIVE -->
+    <nav class="nav hidden">
+        <i class="fa-solid fa-xmark icon-close"></i>
+        <ul class="list">
+            <li class="list__item">
+                <div class="list__button">
+                    <a href="#" class="nav__link">inicio</a>
+                </div>
+            </li>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link">nuevo</a>
+                </div>
+            </li>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link">productos</a>
+                    <i class="list_arrow fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">remeras</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">necesers</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">mochilas</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">medias</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">mate</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">billeteras</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">gorras</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">calzado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">bolsos</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">morrales</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">calzado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">bolsos</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">morrales</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">calzado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">bolsos</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">morrales</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list__item">
+                <div class="list__button">
+                    <a href="#" class="nav__link">descuentos</a>
+                </div>
+            </li>
+            <li class="list__item">
+                <div class="list__button">
+                    <a href="#" class="nav__link">Contacto</a>
+                </div>
+            </li>
+        </ul> 
+    </nav>
+    <!-- CARRITO -->
+    <div class="cart hidden">
+        <i class="fa-solid fa-xmark cart-close"></i>
+        <div class="cart-title-container">
+            <h3 class="cart-title">carrito de compras</h3>
+        </div>
+        <div id="cart">
+            <!-- <div class="cart-item">
+                <div class="item-img">
+                    <img src="./assets/imgs/products/remeras/remera-diego82-2.jpg"/>
+                </div>
+                <div class="item-info">
+                    <div class="item-info-text">
+                        <h3 class="item-title">remera "diego 82"</h3>
+                        <span class="item-price">$1509</span>
+                        <div class="item-handler">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">1</span>
+                            <span class="quantity-handler up">+</span>
+                            <a class="item-trash"><i class="fa-solid fa-trash-can"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <span class="divider"></span>
+        <div class="cart-total">
+            <h4 class="cart-subTotal">subTotal:</h4>
+            <span id="subtotal-cart">$0</span>
+        </div>
+        <div class="cart-local">
+            <div class="cart-local-top">
+                <i class="fa-solid fa-store"></i>
+                <span>nuestro local</span>
+            </div>
+            <div class="cart-local-bottom">
+                <div class="local-bottom-left">
+                    <input type="radio" name="" id="opt-local">
+                    <span class="local-description">COPA Poeta Lugones 36, Nueva Córdoba, Córdoba - Atención de Lun. a Vie de 10 a 19hs.</span>
+                </div>
+                <span class="local-free">gratis</span>
+            </div>
+        </div>
+        <div class="cart-price-total">
+            <div class="cart-total">
+                <h4>Total:</h4>
+                <span id="total-cart">$0</span>
+            </div>
+            <div class="cart-cuotas">
+                <span class="cart-cuotas-text"></span>
+            </div>
+        </div>
+        
+        <a class="cart-btn-buy disabled" href="">Comprar</a>
+        <a class="cart-view-more" href="#">ver más productos</a>
+    </div>
+    
+    <div class="overlay hidden"></div>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero">
+            <div class="splide splide-hero">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="hero-img" src="./assets/imgs/model/DSC_0391.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="hero-img" src="./assets/imgs/model/DSC_0443.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="hero-img" src="./assets/imgs/model/DSC_0514.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>                        
+        </section>
+        
+        <!-- BENEFICIOS -->
+        <section id="benefits">
+            <div class="benefit">
+                <i class="fa-solid fa-truck-fast benefit-icon"></i>
+                <div class="benefit-text">
+                    <span class="benefit-title">envíamos tu compra</span>
+                    <span class="benefit-description">Entregas a todo el pais</span>
+                </div>
+            </div>
+            <div class="benefit">
+                <i class="fa-regular fa-credit-card benefit-icon"></i>
+                <div class="benefit-text">
+                    <span class="benefit-title">pagá como quieras</span>
+                    <span class="benefit-description">Tarjetas de crédito o efectivo.</span>
+                </div>
+            </div>
+            <div class="benefit">
+                <i class="fa-solid fa-lock benefit-icon"></i>
+                <div class="benefit-text">
+                    <span class="benefit-title">comprá de manera segura</span>
+                    <span class="benefit-description">Tus datos siempre protegidos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section id="products">
+            <div class="section-title">
+                <h2 class="title-text">destacados</h2>
+                <span class="title-line"></span>
+            </div>
+            <div class="products-container" id="products-container-featured">
+                <!-- <div class="product" id="product-1">
+                    <div class="product-img">
+                        <img class="img" src="./assets/imgs/products/remeras/remera-ronaldo.jpg" alt="">
+                        <img class="img product-img-hover" src="./assets/imgs/products/remeras/remera-ronaldo-2.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-text">
+                            <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
+                            <span class="product-price">$39.990</span>
+                            <div class="product-pay">
+                            <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                            <span class="product-pay-text">6 cuotas sin interés</span>
+                        </div>
+                        </div>
+                        <div class="product-buttons">
+                            <span class="button-buy button">
+                                <i class="fa-solid fa-bag-shopping icon-buy"></i>
+                                comprar
+                            </span>
+                            <span class="button-view button">
+                                <i class="fa-regular fa-eye eye-icon "></i>
+                                ver
+                            </span> 
+                        </div>   
+                    </div>
+                </div> -->
+            </div>
+            <button class="button button-view-products">ver mas</button>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section id="categories">
+            <div class="category">
+                <img src="./assets/imgs/model/IMG_0006.PNG" alt=""  class="category-img"/>
+                <span class="category-title">mochilas</span>
+            </div>
+            <div class="category">
+                <img src="./assets/imgs/model/IMG_0601.PNG" alt="" class="category-img" />
+                <span class="category-title">remeras</span>
+            </div>
+            <div class="category">
+                <img src="./assets/imgs/model/IMG_1745.JPG" alt="" class="category-img" />
+                <span class="category-title">neceser</span>
+            </div>
+        </section>
+        
+        <!-- OFERTAS -->
+        <!-- <section id="offers">
+            <div class="section-title">
+                <h2 class="title-text">ofertas</h2>
+                <span class="title-line"></span>
+            </div>
+            <div class="products-container">
+                <div class="splide splide-offers">
+                    <div class="splide__track">
+                        <ul class="splide__list" id="products-container-offers">
+
+                            <li class="splide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img class="img" src="./assets/imgs/products/remeras/" alt="">
+                                        <span class="product-sale">sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-info-text">
+                                            <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
+                                            <div class="product-offer">
+                                                <span class="product-price">$39.990</span>
+                                                <span class="offer">$39.990</span>
+                                            </div>
+                                            <div class="product-pay">
+                                                <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                                                <span class="product-pay-text">6 cuotas sin interés</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-buttons">
+                                            <a href="#" class="button-buy button">comprar</a>
+                                            <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                                        </div>   
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="button button-view-products">ver mas</button>
+        </section> -->
+
+        <!-- LOCAL -->
+        <section id="local-location">
+            <div class="splide splide-location">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="local-img" src="./assets/imgs/model/local.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="local-img" src="./assets/imgs/model/local-2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="local-img" src=./assets/imgs/model/local-3.jpg alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="local-info">
+                <span class="local-title">¡visitá nuestro local!</span>
+                <div class="local-text">
+                    <div class="local-ubication">
+                        <span class="direction">av. poeta lugones 36</span>
+                        <span class="city">nueva córdoba, argentina</span>
+                    </div>
+                    <div class="local-time">
+                        <div class="day">
+                            <span class="day-week">lun-vie</span>
+                            <span class="day-endweek">sab</span>
+                        </div>
+                        <div class="hour">
+                            <span class="hour-week">9:30 a 13:30 | 15 a 19</span>
+                            <span class="hour-endweek">9:30 a 13:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients">
+            <div class="section-title">
+                <h2 class="title-text">indumentaria para campeones</h2>
+                <span class="title-line"></span>
+            </div>
+            <span class="client-thanks">gracias por confiar en nosotros</span>
+            
+            <div class="clients-imgs">
+                <div class="client-info">
+                    <img class="client-img" src="./assets/imgs/model/corda-copa.jpg" alt="">
+                    <div class="client-hover">
+                        <span class="client-name">sebastián corda</span>
+                    <span class="client-description">jugador de instituto ACC</span>
+                    </div>
+                </div>
+                <div class="client-info">
+                    <img class="client-img" src="./assets/imgs/model/player-copa.png"  alt="">
+                    <div class="client-hover">
+                        <span class="client-name">maría romero</span>
+                    <span class="client-description">arquera de belgrano de córdoba</span>
+                    </div>
+                </div>
+                <div class="client-info">
+                    <img class="client-img" src="./assets/imgs/model/player 2-copa.png"  alt="">
+                    <div class="client-hover">
+                        <span class="client-name">lara berón</span>
+                    <span class="client-description">jugadora de belgrano de córdoba</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-top">
+            <img class="footer-logo" src="./assets/imgs/logos/logo-copa-white.png" alt="">
+            <div class="footer-menu">
+                <span class="footer-title" >menú</span>
+                <ul class="menu-list">
+                    <li><a href="">inicio</a></li>
+                    <li><a href="">nuevo</a></li>
+                    <li><a href="">productos</a></li>
+                    <li><a href="">descuentos</a></li>
+                    <li><a href="">contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-title">contactános</span>
+                <div class="contact-icons">
+                    <div class="mail">
+                    <i class="fa-regular fa-envelope footer-icon"></i>
+                    <span class="mail-text" >contacto@copaindumentaria.com</span>
+                </div>
+                <div class="whp">
+                    <i class="fa-brands fa-whatsapp footer-icon"></i>
+                    <span class="whp-text" >154648121</span>
+                </div>
+                <div class="footer-location">
+                    <i class="fa-solid fa-location-dot footer-icon"></i>
+                    <span class="location-text">av. poeta lugones 36, córdoba capital.
+                    </span>
+                </div>
+                </div>
+                
+            </div>
+            <div class="footer-social">
+                <span class="footer-title">encontranos en</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/copa.oficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/copa.oficial1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="bottom-text">2022 © COPA INDUMENTARIA | Design By Joaquín Pozzo</span>
+        </div>
+    </footer>
+
+    <!-- SPLIDE JS -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
