@@ -183,38 +183,37 @@ const closeOnClick = (e) => {
 	closeMenu();
 };
 
-const closeCart = () => {
-    cartMenu.classList.add('hidden')
-    cartMenu.classList.remove('show')
-    overlay.classList.add('hidden')
-    overlay.classList.remove('show')
-
-}
-
 const showCart = () => {
-    cartMenu.classList.add('show')
-    cartMenu.classList.remove('hidden')
-    cartMenu.classList.add('slide-right')
-    overlay.classList.remove('hidden')
-    overlay.classList.add('show')
+    overlay.classList.remove('hidden');
+    overlay.classList.add('show');
+    cartMenu.classList.add('show');
+    cartMenu.classList.remove('hidden');
+    cartMenu.classList.add('slide-right');
     closeMenu();
-}
+};
 
 const showMenu = () => {
-    navbarR.classList.add('show')
-    navbarR.classList.remove('hidden')
-    cartMenu.classList.add('slide-right')
-    overlay.classList.remove('hidden')
-    overlay.classList.add('show')
+    overlay.classList.add('show');
+    overlay.classList.remove('hidden');
+    navbarR.classList.add('show');
+    navbarR.classList.remove('hidden');
+    cartMenu.classList.add('slide-right');
     closeCart();
-}
+};
+
+const closeCart = () => {
+    cartMenu.classList.remove('show');
+    cartMenu.classList.add('hidden');
+    overlay.classList.remove('show');
+    overlay.classList.add('hidden');
+};
 
 const closeMenu = () => {
-    navbarR.classList.add('hidden')
-    navbarR.classList.remove('show')
-    overlay.classList.add('hidden')
-    overlay.classList.remove('show')
-}
+    navbarR.classList.remove('show');
+    navbarR.classList.add('hidden');
+    overlay.classList.remove('show');
+    overlay.classList.add('hidden');
+};
 
 // Abir Dropdown del menu responsive
 listElements.forEach(listElement => {
@@ -451,14 +450,15 @@ const init = () => {
 	showMoreBtn.addEventListener("click", showMoreProducts);
 	categoriesContainer.addEventListener("click", applyFilter);
 
-
     // Abrir y cerrar menu,navbar,cart
     iconMenu.addEventListener("click", showMenu)
     iconClose.addEventListener("click", closeMenu)
     iconCart.addEventListener("click", showCart)
     cartClose.addEventListener("click", closeCart)
-    overlay.addEventListener("click", closeCart)
-    overlay.addEventListener("click", closeMenu)
+
+    // overlay.addEventListener("click", closeCart)
+    // overlay.addEventListener("click", closeMenu)
+
 	iconMenu.addEventListener("click", closeOnClick);
     window.addEventListener("scroll", scroll);
 

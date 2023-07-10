@@ -227,25 +227,6 @@ i.menu-icon {
     display: none;
 }
 
-.overlay {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 1; /*Para que quede por encima del resto de las cosas*/
-
-    /*Efecto de Glassmorphismo*/
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-}
-
-.show-overlay {
-    display: block;
-  }
-
 /* CART */
 
 #cart {
@@ -1205,7 +1186,25 @@ footer {
 
 
 
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 5; /*Para que quede por encima del resto de las cosas*/
 
+    /*Efecto de Glassmorphismo*/
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.show-overlay {
+    display: block;
+}
 
 
 .disabled {
