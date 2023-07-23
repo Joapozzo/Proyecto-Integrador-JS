@@ -258,11 +258,11 @@
         }
         
         .categories {
-            gap: 10px;
+            gap: 7px;
         }
 
         .category {
-            font-size: 14px;
+            font-size: 12px;
             padding: 7px 12px;
         }
 
@@ -293,6 +293,10 @@
 
         .product-buttons .button{
             font-size: 10px;
+        }
+
+        .product-name {
+            font-size: 14px;
         }
     
         /* CATEGORY */
@@ -336,5 +340,10 @@
         .footer-top {
             flex-direction: column;
             gap: 40px;
+        }
+
+        .bottom-text {
+            text-align: center;
+            font-size: 12px;
         }
 }

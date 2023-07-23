@@ -207,3 +207,23 @@ main {
     transition: all .2s ease-in-out;
 }
 
+.backtohome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.backtohome i {
+    color: var(--red);
+    
+    &:hover {
+        color: #011627;
+        transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+}
+}
+
