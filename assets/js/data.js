@@ -240,8 +240,8 @@ let stockProducts = [
         id: 10,
         nombre: "Neceser - 'Gajos'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/neceseres/neceser-gajos.jpg",
-        img2: "/neceseres/neceser-gajos-2.jpg",
+        img: "/rneceseres/neceser-gajos.jpg",
+        img2: "/rneceseres/neceser-gajos-2.jpg",
         talles: {
             xl: true,
             l: true,
@@ -266,8 +266,8 @@ let stockProducts = [
         id: 11,
         nombre: "Neceser - 'Metal'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/neceseres/neceser-metal.jpg",
-        img2: "/neceseres/neceser-metal-2.jpg",
+        img: "/rneceseres/neceser-metal.jpg",
+        img2: "/rneceseres/neceser-metal-2.jpg",
         talles: {
             xl: true,
             l: true,
@@ -292,8 +292,8 @@ let stockProducts = [
         id: 12,
         nombre: "Neceser - 'Zr'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/neceseres/neceser-zr.jpg",
-        img2: "/neceseres/neceser-zr-2.jpg",
+        img: "/rneceseres/neceser-zr.jpg",
+        img2: "/rneceseres/neceser-zr-2.jpg",
         talles: {
             xl: true,
             l: true,
