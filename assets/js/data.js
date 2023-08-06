@@ -214,8 +214,8 @@ let stockProducts = [
         id: 9,
         nombre: "Neceser - 'Kubo'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/rneceseres/rneceser-cuero.jpg",
-        img2: "/rneceseres/rneceser-cuero-2.jpg",
+        img: "/mneceseres/mneceser-cuero.jpg",
+        img2: "/mneceseres/mneceser-cuero-2.jpg",
         talles: {
             xl: true,
             l: true,
