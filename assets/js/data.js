@@ -231,7 +231,7 @@ let stockProducts = [
             azul: false
         },
         categoria: "Neceseres",
-        precio: 8000,
+        precio: 6000,
         oferta: false,
         destacado: true,
         cantidad: 1
@@ -257,7 +257,7 @@ let stockProducts = [
             azul: false
         },
         categoria: "Neceseres",
-        precio: 8000,
+        precio: 7000,
         oferta: false,
         destacado: true,
         cantidad: 1
@@ -283,7 +283,7 @@ let stockProducts = [
             azul: false
         },
         categoria: "Neceseres",
-        precio: 8000,
+        precio: 6500,
         oferta: false,
         destacado: true,
         cantidad: 1
@@ -309,7 +309,7 @@ let stockProducts = [
             azul: false
         },
         categoria: "Neceseres",
-        precio: 8000,
+        precio: 6500,
         oferta: false,
         destacado: true,
         cantidad: 1
