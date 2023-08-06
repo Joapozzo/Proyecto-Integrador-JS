@@ -319,8 +319,8 @@ let stockProducts = [
         id: 13,
         nombre: "Botinero - 'Gajos'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bolsos/botinero-gajos.jpg",
-        img2: "/bolsos/botinero-gajos-2.jpg",
+        img: "/bolsos/mochila1-line.jpg",
+        img2: "/bolsos/mochila1-line-2.jpg",
         talles: {
             xl: true,
             l: true,
@@ -345,8 +345,8 @@ let stockProducts = [
         id: 14,
         nombre: "Botinero - 'Line'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bolsos/mochila-line.jpg",
-        img2: "/bolsos/mochila-line-2.jpg",
+        img: "/bolsos/mochila3-line.jpg",
+        img2: "/bolsos/mochila3-line-2.jpg",
         talles: {
             xl: true,
             l: true,
@@ -397,8 +397,8 @@ let stockProducts = [
         id: 16,
         nombre: "Matera - 'Gajos'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bolsos/matera-gajos.jpg",
-        img2: "/bolsos/matera-gajos-2.jpg",
+        img: "/bolsos/mochila4-line.jpg",
+        img2: "/bolsos/mochila4-line-2.jpg",
         talles: {
             xl: true,
             l: true,
