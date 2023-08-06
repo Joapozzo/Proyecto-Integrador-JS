@@ -372,7 +372,7 @@ let stockProducts = [
         nombre: "Mochila - 'Gajos'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
         img: "/bolsos/mochila-line.jpg",
-        img2: "/bolsos/mochila-line-2.jpg",
+        img2: "/bolsos/mochila-line2.jpg",
         talles: {
             xl: true,
             l: true,
