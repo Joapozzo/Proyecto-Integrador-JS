@@ -209,13 +209,13 @@ let stockProducts = [
         destacado: true,
         cantidad: 1
     },
-    // NECESERES
-    /* neceser-01 */ {   
+    // BILLETERAS
+    /* billetera-01 */ {   
         id: 9,
-        nombre: "Neceser - 'Kubo'",
+        nombre: "Billetera - 'Cuero'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bneceseres/mochila1-line.jpg",
-        img2: "/bneceseres/mochila1-line-2.jpg",
+        img: "/billeteras/1.png",
+        img2: "/billeteras/1.png",
         talles: {
             xl: true,
             l: true,
@@ -236,12 +236,12 @@ let stockProducts = [
         destacado: true,
         cantidad: 1
     },
-    /* neceser-02 */ {   
-        id: 10,
-        nombre: "Neceser - 'Gajos'",
+    /* billetera-02 */ {   
+        id: 9,
+        nombre: "Billetera - 'Black'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bneceseres/mochila3-line.jpg",
-        img2: "/bneceseres/mochila3-line-2.jpg",
+        img: "/billeteras/2.png",
+        img2: "/billeteras/2.png",
         talles: {
             xl: true,
             l: true,
@@ -262,12 +262,12 @@ let stockProducts = [
         destacado: true,
         cantidad: 1
     },
-    /* neceser-03 */ {   
-        id: 11,
-        nombre: "Neceser - 'Metal'",
+    /* billetera-03 */ {   
+        id: 9,
+        nombre: "Billetera - 'Inca'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bneceseres/mochila4-line.jpg",
-        img2: "/bneceseres/mochila4-line-2.jpg",
+        img: "/billeteras/5.png",
+        img2: "/billeteras/5.png",
         talles: {
             xl: true,
             l: true,
@@ -288,12 +288,12 @@ let stockProducts = [
         destacado: true,
         cantidad: 1
     },
-    /* neceser-04 */ {   
-        id: 12,
-        nombre: "Neceser - 'Zr'",
+    /* billetera-04 */ {   
+        id: 9,
+        nombre: "Billetera - 'Perú'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bneceseres/mochila-line.jpg",
-        img2: "/bneceseres/mochila-line2.jpg",
+        img: "/billeteras/6.png",
+        img2: "/billeteras/6.png",
         talles: {
             xl: true,
             l: true,
