@@ -214,8 +214,8 @@ let stockProducts = [
         id: 9,
         nombre: "Neceser - 'Kubo'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/mneceseres/mochila1-line.jpg",
-        img2: "/mneceseres/mochila1-line-2.jpg",
+        img: "/bneceseres/mochila1-line.jpg",
+        img2: "/bneceseres/mochila1-line-2.jpg",
         talles: {
             xl: true,
             l: true,
@@ -240,8 +240,8 @@ let stockProducts = [
         id: 10,
         nombre: "Neceser - 'Gajos'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/mneceseres/mochila3-line.jpg",
-        img2: "/mneceseres/mochila3-line-2.jpg",
+        img: "/bneceseres/mochila3-line.jpg",
+        img2: "/bneceseres/mochila3-line-2.jpg",
         talles: {
             xl: true,
             l: true,
@@ -266,8 +266,8 @@ let stockProducts = [
         id: 11,
         nombre: "Neceser - 'Metal'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/mneceseres/mochila4-line.jpg",
-        img2: "/mneceseres/mochila4-line-2.jpg",
+        img: "/bneceseres/mochila4-line.jpg",
+        img2: "/bneceseres/mochila4-line-2.jpg",
         talles: {
             xl: true,
             l: true,
@@ -292,8 +292,8 @@ let stockProducts = [
         id: 12,
         nombre: "Neceser - 'Zr'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/mneceseres/mochila-line.jpg",
-        img2: "/mneceseres/mochila-line2.jpg",
+        img: "/bneceseres/mochila-line.jpg",
+        img2: "/bneceseres/mochila-line2.jpg",
         talles: {
             xl: true,
             l: true,
