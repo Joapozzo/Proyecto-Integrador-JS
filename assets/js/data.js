@@ -345,8 +345,8 @@ let stockProducts = [
         id: 14,
         nombre: "Botinero - 'Line'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
-        img: "/bolsos/botinero-line.jpg",
-        img2: "/bolsos/botinero-line-2.jpg",
+        img: "/bolsos/mochila-line.jpg",
+        img2: "/bolsos/mochila-line-2.jpg",
         talles: {
             xl: true,
             l: true,
